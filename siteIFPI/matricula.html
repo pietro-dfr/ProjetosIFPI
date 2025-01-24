@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mátricula</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+  </head>
+  <body>
+    <header>
+      <div class="w3-bar w3-white w3-opacity-min w3-large">
+        <div class="w3-right w3-hide-small">
+          <a href="index.html" class="w3-bar-item w3-button w3-hide-small"
+            >Inicio</a
+          >
+
+          <div class="w3-dropdown-hover">
+            <a href="cursos" class="w3-bar-item w3-button w3-hide-small"
+              >Cursos</a
+            >
+            <div class="w3-dropdown-content w3-bar-block w3-card-4">
+              <a href="#" class="w3-bar-item w3-button">Informática</a>
+              <a href="#" class="w3-bar-item w3-button">Administração</a>
+              <a href="#" class="w3-bar-item w3-button">Agricultura</a>
+              <a href="#" class="w3-bar-item w3-button">Mineração</a>
+            </div>
+          </div>
+
+          <a href="ingresso.html" class="w3-bar-item w3-button w3-hide-small"
+            >Como Ingressar</a
+          >
+          <a href="matricula.html" class="w3-bar-item w3-button w3-hide-small"
+            >Efetuar Matrícula</a
+          >
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="container">
+        <div class="left">
+          <form>
+            <fieldset>
+              <legend>Mátricula de Alunos</legend>
+              <p>
+                <label for="name">
+                  Nome:
+                  <input type="text" placeholder="Digite seu nome" required />
+                </label>
+              </p>
+              <!---->
+              <p>
+                <label for="email">
+                  <span>E-mail:</span>
+                </label>
+                <input type="email" id="email" multiple required />
+              </p>
+              <!---->
+              <p>
+                <label for="myDate">Data de Nascimento:</label>
+                <input
+                  type="date"
+                  name="myDate"
+                  min="2000-01-01"
+                  max="2025-01-01"
+                  id="myDate"
+                  required
+                />
+              </p>
+              <!---->
+              <p>
+                <label for="pwd">
+                  <span>Senha:</span>
+                  <input type="password" id="pwd" name="password" required />
+                </label>
+              </p>
+              <!---->
+              <p>
+                <input
+                  type="button"
+                  class="button_active"
+                  value="Confirmar"
+                  onclick="location.href='index.html'"
+                />
+              </p>
+              <!---->
+            </fieldset>
+          </form>
+        </div>
+        <div class="right">
+          <img src="logo-ifpi.png" alt="Foto da logo do IFPI" />
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="container">
+        <div class="left">
+          <div>
+            <h3>Endereço:</h3>
+            <p>IFPI - Paulistana</p>
+            <p>Rodovia BR 407, km 5, s/n</p>
+            <p>Paulistana - PI, 64750-000</p>
+          </div>
+        </div>
+        <div class="sitemap">
+          <h3>Mapa do Site</h3>
+          <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Cursos</a></li>
+            <li><a href="#">Como Ingressar</a></li>
+            <li><a href="#">Matrícula</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
